@@ -1,0 +1,1 @@
+The `ui` folder in this project contains reusable components that can be used throughout the application's user interface.

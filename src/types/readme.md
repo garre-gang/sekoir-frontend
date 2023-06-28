@@ -1,0 +1,3 @@
+The types folder contains TypeScript type definitions used throughout the application. It serves as a central repository for custom type declarations, ensuring consistent and type-safe code across different modules.
+
+In this folder, you will find type definitions for interfaces, enums, custom data structures, and any other types that are specific to your application's domain. These types help improve code readability, catch potential type errors during development, and enhance IDE autocompletion and documentation.

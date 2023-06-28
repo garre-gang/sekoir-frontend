@@ -1,0 +1,3 @@
+This folder contains reusable utility functions and classes that can be used throughout the application. It provides a centralized location for common code that can be shared across different components and modules.
+
+The lib folder typically includes helper functions, API wrappers, data manipulation utilities, and any other code that doesn't fit into a specific module or component but is essential for the application's functionality.
