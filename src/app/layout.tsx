@@ -1,7 +1,8 @@
+import LoggedInHeader from '@/components/LoggedInHeader';
 import '@/styles/globals.css'
-import { Inter } from 'next/font/google'
+import { Almarai } from "next/font/google";
 
-const inter = Inter({ subsets: ['latin'] })
+const almarai = Almarai({ subsets: ["arabic"] , weight:["300","400","700","800"] });
 
 export const metadata = {
   title: "SEKOR",
@@ -14,8 +15,11 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html dir="rtl" lang="ar">
+      <body className={`bg-gray-200 font-sans font-bold text-gray-800  ${almarai.className} `}>
+        <LoggedInHeader />
+        {children}
+      </body>
     </html>
-  )
+  );
 }

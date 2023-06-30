@@ -1,9 +1,15 @@
+import OfferCart from "@/components/ui/OfferCart";
+import { FakeOfferCarts } from "@/lib/fakeData";
+
+
+
 
 export default function Home() {
   return (
-    <main className="bg-gray-50 text-gray-600 flex flex-col min-h-screen  justify-center items-center w-full text-4xl gap-5">
-      <h2>Welcome to</h2>
-      <h1 className="text-9xl font-bold text-teal-500 animate-pulse">SEKOR</h1>
+    <main className="flex flex-col  w-full items-center gap-10 p-10">
+  {FakeOfferCarts.map((offer)=>{
+    return <OfferCart key={offer.id} data={offer} /> 
+  })}
     </main>
   );
 }
