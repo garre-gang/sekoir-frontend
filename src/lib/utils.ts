@@ -1,5 +1,18 @@
-import { formatDistanceToNow } from "date-fns";
+import { format, formatDistanceToNow } from "date-fns";
 import arLocale from "date-fns/locale/ar";
+import { clsx, type ClassValue } from "clsx";
+import { twMerge } from "tailwind-merge";
+
+
+
+//what is twMerge ?
+//Utility function to efficiently merge Tailwind CSS classes in JS without style conflicts.
+//what is clsx ?
+// utility for constructing className strings conditionally.
+export function cn(...inputs: ClassValue[]) {
+  return twMerge(clsx(inputs));
+}
+
 
 
 // this function used to get the distance between the current date and the date passed to it 
@@ -7,6 +20,13 @@ export function getTimeDifference(createdAt:string) {
   const postDate = new Date(createdAt);
   return formatDistanceToNow(postDate, { addSuffix: true, locale: arLocale });
 }
+
+export function getDateFormated(createdAt: string) {
+  const postDate = new Date(createdAt);
+  return format(postDate, "dd-MM-yyyy");
+}
+
+
 
 // I think you need this in the backend
 // const currencyList = [

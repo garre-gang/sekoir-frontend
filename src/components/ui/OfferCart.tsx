@@ -1,6 +1,6 @@
 import { getTimeDifference } from "@/lib/utils";
 import Image from "next/image";
-import { AiOutlineCheckCircle, AiOutlineClockCircle, AiOutlineExclamationCircle, AiOutlineHeart } from "react-icons/ai";
+import { AiOutlineCheckCircle, AiOutlineClockCircle, AiOutlineExclamationCircle, } from "react-icons/ai";
 import { IoLocationOutline } from "react-icons/io5";
 import { FiHeart, FiSend } from "react-icons/fi";
 interface OfferCartProps {
@@ -13,7 +13,7 @@ const OfferCart = ({data}: OfferCartProps) => {
 
 
 
-const theDifference = getTimeDifference(data.createdAt);
+const theDifference = getTimeDifference(data.createdAt.toDateString());
 
 
 
