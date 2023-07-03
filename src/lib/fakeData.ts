@@ -396,6 +396,90 @@ export const FakeDeals: Deal[] = [
       createdAt: new Date("2023-07-02T10:00:00Z"),
     },
   },
+  {
+    id: "5",
+    deals: [
+      {
+        between: ["أحمد", "سارة"],
+        id: "4",
+        createdAt: new Date("2023-04-29T08:00:00Z"),
+        from: {
+          amount: 100,
+          currency: { name: "دينار جزائري", code: "DZD" },
+          company: {
+            id: "123",
+            name: "شركة أ",
+            logo: "/wise.jpg",
+          },
+        },
+        to: {
+          amount: 200,
+          currency: { name: "دولار أمريكي", code: "USD" },
+          company: {
+            id: "456",
+            name: "شركة ب",
+            logo: "/post.webp",
+          },
+        },
+        rating: 5,
+        status: "in progress",
+      },
+    ],
+    conversation: {
+      id: "1",
+      participants: [
+        { name: "أحمد", img: "/person.webp" },
+        { name: "سارة", img: "/person.webp" },
+      ],
+      messages: [
+        {
+          id: "1",
+          sender: { name: "أحمد", img: "/person.webp" },
+          recipient: { name: "سارة", img: "/person.webp" },
+          message: "مرحبًا سارة، هل تحتاجين إلى تبادل العملات؟",
+          createdAt: new Date("2023-07-02T10:00:00Z"),
+        },
+        {
+          id: "2",
+          sender: { name: "سارة", img: "/person.webp" },
+          recipient: { name: "أحمد", img: "/person.webp" },
+          message: "نعم، أحتاج إلى تبادل 500 دولار أمريكي إلى دينار جزائري.",
+          createdAt: new Date("2023-07-02T10:05:00Z"),
+        },
+        {
+          id: "3",
+          sender: { name: "أحمد", img: "/person.webp" },
+          recipient: { name: "سارة", img: "/person.webp" },
+          message:
+            "ممتاز! يمكنني تقديم لك 500 دينار جزائري مقابل 250 دولار أمريكي.",
+          createdAt: new Date("2023-07-02T10:10:00Z"),
+        },
+        {
+          id: "4",
+          sender: { name: "سارة", img: "/person.webp" },
+          recipient: { name: "أحمد", img: "/person.webp" },
+          message: "أنا موافقة على الصفقة. كيف يمكننا إتمامها؟",
+          createdAt: new Date("2023-07-02T10:15:00Z"),
+        },
+        {
+          id: "5",
+          sender: { name: "أحمد", img: "/person.webp" },
+          recipient: { name: "سارة", img: "/person.webp" },
+          message:
+            "نستطيع التقابل في مقهى المدينة في الساعة 11:00 صباحًا لإتمام الصفقة.",
+          createdAt: new Date("2023-07-02T10:20:00Z"),
+        },
+        {
+          id: "6",
+          sender: { name: "سارة", img: "/person.webp" },
+          recipient: { name: "أحمد", img: "/person.webp" },
+          message: "حسنًا، سأكون في المقهى في الساعة 11:00 صباحًا.",
+          createdAt: new Date("2023-07-02T10:25:00Z"),
+        },
+      ],
+      createdAt: new Date("2023-07-02T10:00:00Z"),
+    },
+  },
 ]; 
 
 

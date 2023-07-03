@@ -5,7 +5,7 @@ import { ScrollArea } from "./scroll-area";
 
 const RequestStatus = ({ deals }: { deals: DealDetails[] }) => {
   return (
-    <section className="bg-gray-50 sm:col-span-1 col-span-3 border border-gray-300  flex-col ">
+    <section id="status" className="bg-gray-50 lg:col-span-1 col-span-3 border border-gray-300  flex-col ">
       <ScrollArea className="h-full w-full">
         <header className="p-3">
           {deals.length < 0 ? (

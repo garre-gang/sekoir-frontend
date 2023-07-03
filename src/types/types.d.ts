@@ -62,6 +62,9 @@ interface Conversation {
   messages: ChatMessage[];
   createdAt: Date;
 }
+
+
+
 interface DealDetails {
   between: [string, string];
   id: string;

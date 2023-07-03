@@ -14,6 +14,18 @@ export function cn(...inputs: ClassValue[]) {
 }
 
 
+export const scrollToSection = (sectionId:string) => {
+    const section = document.getElementById(sectionId);
+    window.scrollTo({
+      top: section?.offsetTop,
+      behavior: 'smooth',
+    });
+  };
+
+  
+
+
+
 
 // this function used to get the distance between the current date and the date passed to it 
 export function getTimeDifference(createdAt:string) {

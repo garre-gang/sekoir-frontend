@@ -15,7 +15,7 @@ const RecipientMessage = ({
       <p
         {...props}
         className={
-          " px-5 p-1 max-w-[17rem] text-right bg-gray-900 text-gray-50 rounded-full"
+          " sm:px-5 px-4 p-2 sm:max-w-[17rem] sm:text-base text-sm max-w-[12rem] text-right bg-gray-900 text-gray-50 rounded-full"
         }
       >
         {message}

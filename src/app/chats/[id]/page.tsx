@@ -11,9 +11,9 @@ const thisDeal = FakeDeals.filter((e)=>e.id === params.id);
 
 
   return (
-    <main className="max-w-7xl grid grid-cols-3 w-full gap-10 p-10">
-      <RequestStatus deals={thisDeal[0].deals} />
+    <main className="max-w-7xl grid grid-cols-3  w-full gap-10 p-10">
       <Messages conversation={thisDeal[0].conversation} />
+      <RequestStatus deals={thisDeal[0].deals} />
     </main>
   );
 

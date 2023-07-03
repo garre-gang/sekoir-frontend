@@ -4,8 +4,6 @@ import React from 'react'
 import { AiOutlineSearch } from 'react-icons/ai';
 
 const page = () => {
-
-  
   return (
     <main className="flex flex-col  w-full items-center gap-10 p-10">
      <header className='flex justify-center items-center gap-2'>
@@ -14,7 +12,7 @@ const page = () => {
 <AiOutlineSearch className='w-7 h-7' /> 
       </button>
      </header>
-      <main className="flex flex-col gap-5 overflow-x-auto lg:max-w-none md:max-w-2xl sm:max-w-xl max-w-xs pb-5">
+      <main className="flex flex-col gap-5 overflow-x-auto lg:max-w-5xl xl:max-w-none md:max-w-2xl sm:max-w-xl max-w-xs pb-5">
         <section className=" w-[75rem] grid grid-cols-6 h-20 p-3">
           <section
             dir="rtl"
