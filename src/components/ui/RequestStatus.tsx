@@ -5,7 +5,7 @@ import { ScrollArea } from "./scroll-area";
 
 const RequestStatus = ({ deals }: { deals: DealDetails[] }) => {
   return (
-    <section className="bg-gray-50 border border-gray-300  flex-col ">
+    <section className="bg-gray-50 sm:col-span-1 col-span-3 border border-gray-300  flex-col ">
       <ScrollArea className="h-full w-full">
         <header className="p-3">
           {deals.length < 0 ? (
@@ -15,20 +15,9 @@ const RequestStatus = ({ deals }: { deals: DealDetails[] }) => {
           ) : (
             deals.map((deal) => {
               if (deal.status === "opened") {
-                return (
-                  <OpenedDeal
-                    key={deal.id}
-                    deal={deal}
-                  />
-                );
+                return <OpenedDeal key={deal.id} deal={deal} />;
               } else if (deal.status === "in progress") {
-                return (
-                  <InProgressDeal
-                    key={deal.id}
-                   deal={deal}
-                  />
-
-                );
+                return <InProgressDeal key={deal.id} deal={deal} />;
               } else {
                 return (
                   <div
